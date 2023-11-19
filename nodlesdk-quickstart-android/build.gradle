@@ -8,6 +8,9 @@ buildscript {
             allowInsecureProtocol = true
         }
     }
+    // dependencies {
+    //     classpath 'com.google.gms:google-services:4.3.10'    // Google Services plugin
+    // }
 }
 
 allprojects {
