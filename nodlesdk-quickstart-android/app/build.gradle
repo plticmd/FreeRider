@@ -46,4 +46,7 @@ dependencies {
 
     // Nodle SDK
     implementation 'io.nodle:nodlesdk-rc-lp:57f6eec4c0'
+
+        //// additional dependencies may be required when using getEvents
+        //implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.0"
 }
