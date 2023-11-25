@@ -1,0 +1,13 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+package hilt_aggregated_deps;
+
+import dagger.hilt.processor.internal.aggregateddeps.AggregatedDeps;
+
+@AggregatedDeps(
+   components = {"dagger.hilt.components.SingletonComponent"},
+   modules = {"com.example.platform.ui.windowmanager.demos.WindowDemosActivityModule"}
+)
+public class _com_example_platform_ui_windowmanager_demos_WindowDemosActivityModule {
+   public _com_example_platform_ui_windowmanager_demos_WindowDemosActivityModule() {
+   }
+}
