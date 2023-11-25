@@ -1,0 +1,373 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  Copyright 2023 The Android Open Source Project
+4  Licensed under the Apache License, Version 2.0 (the "License");
+5  you may not use this file except in compliance with the License.
+6  You may obtain a copy of the License at
+7       http://www.apache.org/licenses/LICENSE-2.0
+8  Unless required by applicable law or agreed to in writing, software
+9  distributed under the License is distributed on an "AS IS" BASIS,
+10  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+11  See the License for the specific language governing permissions and
+12  limitations under the License.
+13-->
+14<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+15    xmlns:tools="http://schemas.android.com/tools"
+16    package="com.example.platform.ui.windowmanager" >
+17
+18    <uses-sdk android:minSdkVersion="21" />
+19
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:17:5-67
+20-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:17:22-64
+21
+22    <application
+22-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:19:5-199:19
+23        android:allowBackup="true"
+23-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:20:9-35
+24        android:label="@string/app_name"
+24-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:21:9-41
+25        android:supportsRtl="true"
+25-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:22:9-35
+26        android:theme="@style/AppTheme" >
+26-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:23:9-40
+27        <property
+27-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:25:9-27:36
+28            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_SPLITS_ENABLED"
+28-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:26:13-85
+29            android:value="true" />
+29-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:27:13-33
+30
+31        <activity
+31-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:29:9-38:20
+32            android:name="com.example.platform.ui.windowmanager.demos.WindowDemosActivity"
+32-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:30:13-54
+33            android:exported="true"
+33-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:31:13-36
+34            android:label="@string/windowManagerDemos" >
+34-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:32:13-55
+35            <intent-filter>
+35-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:33:13-37:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:34:17-69
+36-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:34:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:36:17-77
+38-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:36:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:39:9-43:59
+42            android:name="com.example.platform.ui.windowmanager.DualScreenActivity"
+42-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:40:13-47
+43            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+43-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:42:13-122
+44            android:exported="false"
+44-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:41:13-37
+45            android:label="@string/dual_screen_activity" />
+45-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:43:13-57
+46        <activity
+46-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:44:9-48:60
+47            android:name="com.example.platform.ui.windowmanager.RearDisplayModeActivity"
+47-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:45:13-52
+48            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+48-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:47:13-122
+49            android:exported="false"
+49-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:46:13-37
+50            android:label="@string/rear_display_activity" />
+50-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:48:13-58
+51        <activity
+51-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:49:9-54:58
+52            android:name="com.example.platform.ui.windowmanager.MediaPlayerActivity"
+52-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:50:13-48
+53            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+53-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:51:13-122
+54            android:exported="false"
+54-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:52:13-37
+55            android:label="@string/media_player_activity"
+55-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:53:13-58
+56            android:theme="@style/FoldableMediaPlayer" />
+56-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:54:13-55
+57        <activity
+57-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:55:9-59:55
+58            android:name="com.example.platform.ui.windowmanager.DisplayFeaturesActivity"
+58-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:56:13-52
+59            android:exported="false"
+59-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:57:13-37
+60            android:label="@string/display_features"
+60-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:58:13-53
+61            android:supportsPictureInPicture="true" />
+61-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:59:13-52
+62        <activity
+62-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:60:9-63:52
+63            android:name="com.example.platform.ui.windowmanager.SplitLayoutActivity"
+63-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:61:13-48
+64            android:exported="false"
+64-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:62:13-37
+65            android:label="@string/split_layout" />
+65-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:63:13-49
+66        <activity
+66-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:64:9-68:54
+67            android:name="com.example.platform.ui.windowmanager.WindowMetricsActivity"
+67-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:65:13-50
+68            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|uiMode"
+68-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:66:13-98
+69            android:exported="false"
+69-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:67:13-37
+70            android:label="@string/window_metrics" />
+70-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:68:13-51
+71        <activity
+71-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:69:9-74:98
+72            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityA"
+72-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:70:13-53
+73            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+73-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:71:13-121
+74            android:exported="true"
+74-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:72:13-36
+75            android:label="Split Main"
+75-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:73:13-39
+76            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+76-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:74:13-95
+77
+78        <activity-alias
+78-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:76:9-78:66
+79            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityTrampolineTarget"
+79-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:77:13-68
+80            android:targetActivity="com.example.platform.ui.windowmanager.embedding.SplitActivityA" />
+80-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:78:13-63
+81
+82        <activity
+82-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:80:9-85:98
+83            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityB"
+83-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:81:13-53
+84            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+84-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:82:13-121
+85            android:exported="false"
+85-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:83:13-37
+86            android:label="B"
+86-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:84:13-30
+87            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+87-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:85:13-95
+88        <activity
+88-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:86:9-91:98
+89            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityC"
+89-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:87:13-53
+90            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+90-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:88:13-121
+91            android:exported="false"
+91-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:89:13-37
+92            android:label="C"
+92-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:90:13-30
+93            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+93-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:91:13-95
+94        <activity
+94-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:92:9-97:98
+95            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityD"
+95-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:93:13-53
+96            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+96-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:94:13-121
+97            android:exported="false"
+97-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:95:13-37
+98            android:label="D"
+98-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:96:13-30
+99            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+99-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:97:13-95
+100        <activity
+100-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:98:9-103:98
+101            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityE"
+101-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:99:13-53
+102            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+102-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:100:13-121
+103            android:exported="false"
+103-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:101:13-37
+104            android:label="E"
+104-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:102:13-30
+105            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+105-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:103:13-95
+106        <activity
+106-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:104:9-109:98
+107            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityF"
+107-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:105:13-53
+108            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+108-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:106:13-121
+109            android:exported="false"
+109-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:107:13-37
+110            android:label="F"
+110-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:108:13-30
+111            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+111-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:109:13-95
+112        <activity
+112-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:110:9-115:98
+113            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityPlaceholder"
+113-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:111:13-63
+114            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+114-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:112:13-121
+115            android:exported="false"
+115-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:113:13-37
+116            android:label="Placeholder"
+116-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:114:13-40
+117            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity" />
+117-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:115:13-95
+118        <activity
+118-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:116:9-122:58
+119            android:name="com.example.platform.ui.windowmanager.embedding.ExpandedDialogActivity"
+119-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:117:13-61
+120            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+120-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:118:13-121
+121            android:exported="false"
+121-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:119:13-37
+122            android:label="Dialog Activity"
+122-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:120:13-44
+123            android:taskAffinity="com.example.platform.ui.windowmanager.manual_split_affinity"
+123-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:121:13-95
+124            android:theme="@style/ExpandedDialogTheme" />
+124-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:122:13-55
+125        <activity
+125-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:123:9-128:105
+126            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityTrampoline"
+126-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:124:13-62
+127            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+127-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:125:13-121
+128            android:exported="true"
+128-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:126:13-36
+129            android:label="Split Trampoline"
+129-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:127:13-45
+130            android:taskAffinity="com.example.platform.ui.windowmanager.trampoline_affinity" />
+130-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:128:13-93
+131        <activity
+131-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:129:9-134:112
+132            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityList"
+132-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:130:13-56
+133            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+133-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:131:13-121
+134            android:exported="true"
+134-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:132:13-36
+135            android:label="Split List"
+135-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:133:13-39
+136            android:taskAffinity="com.example.platform.ui.windowmanager.list_detail_split_affinity" />
+136-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:134:13-100
+137        <activity
+137-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:135:9-141:103
+138            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityDetail"
+138-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:136:13-58
+139            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+139-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:137:13-121
+140            android:exported="false"
+140-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:138:13-37
+141            android:label="Item detail"
+141-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:139:13-40
+142            android:launchMode="singleTop"
+142-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:140:13-43
+143            android:taskAffinity="com.example.platform.ui.windowmanager.list_detail_split_affinity" />
+143-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:141:13-100
+144        <activity
+144-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:142:9-147:103
+145            android:name="com.example.platform.ui.windowmanager.embedding.SplitActivityListPlaceholder"
+145-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:143:13-67
+146            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+146-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:144:13-121
+147            android:exported="false"
+147-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:145:13-37
+148            android:label="Placeholder"
+148-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:146:13-40
+149            android:taskAffinity="com.example.platform.ui.windowmanager.list_detail_split_affinity" />
+149-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:147:13-100
+150        <!--
+151 The demo App to show how to change the current split layout with the current device and
+152         window states
+153        -->
+154        <activity
+154-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:152:9-157:122
+155            android:name="com.example.platform.ui.windowmanager.embedding.SplitDeviceStateActivityA"
+155-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:153:13-64
+156            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+156-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:154:13-121
+157            android:exported="true"
+157-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:155:13-36
+158            android:label="Split on Device State"
+158-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:156:13-50
+159            android:taskAffinity="com.example.platform.ui.windowmanager.split_device_state_activity_affinity" />
+159-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:157:13-110
+160        <activity
+160-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:158:9-163:122
+161            android:name="com.example.platform.ui.windowmanager.embedding.SplitDeviceStateActivityB"
+161-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:159:13-64
+162            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+162-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:160:13-121
+163            android:exported="true"
+163-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:161:13-36
+164            android:label="Split on Device State B"
+164-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:162:13-52
+165            android:taskAffinity="com.example.platform.ui.windowmanager.split_device_state_activity_affinity" /> <!-- The demo app to show how to change layout with runtime APIs -->
+165-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:163:13-110
+166        <activity
+166-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:164:9-169:127
+167            android:name="com.example.platform.ui.windowmanager.embedding.SplitAttributesToggleMainActivity"
+167-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:165:13-72
+168            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+168-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:166:13-121
+169            android:exported="true"
+169-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:167:13-36
+170            android:label="Split Toggle at Runtime"
+170-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:168:13-52
+171            android:taskAffinity="com.example.platform.ui.windowmanager.split_attributes_toggle_activity_affinity" />
+171-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:169:13-115
+172        <activity
+172-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:170:9-174:118
+173            android:name="com.example.platform.ui.windowmanager.embedding.SplitAttributesTogglePrimaryActivity"
+173-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:171:13-75
+174            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+174-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:172:13-121
+175            android:label="Split Toggle Activity A"
+175-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:173:13-52
+176            android:taskAffinity="com.example.platform.ui.windowmanager.split_attributes_toggle_activity_affinity" />
+176-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:174:13-115
+177        <activity
+177-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:175:9-179:118
+178            android:name="com.example.platform.ui.windowmanager.embedding.SplitAttributesToggleSecondaryActivity"
+178-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:176:13-77
+179            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+179-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:177:13-121
+180            android:label="Split Toggle Activity B"
+180-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:178:13-52
+181            android:taskAffinity="com.example.platform.ui.windowmanager.split_attributes_toggle_activity_affinity" />
+181-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:179:13-115
+182        <activity
+182-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:180:9-184:118
+183            android:name="com.example.platform.ui.windowmanager.embedding.SplitAttributesTogglePlaceholderActivity"
+183-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:181:13-79
+184            android:configChanges="orientation|screenSize|smallestScreenSize|screenLayout|colorMode|density|touchscreen"
+184-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:182:13-121
+185            android:label="Split Toggle Placeholder"
+185-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:183:13-53
+186            android:taskAffinity="com.example.platform.ui.windowmanager.split_attributes_toggle_activity_affinity" /> <!-- Activity embedding initializer -->
+186-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:184:13-115
+187        <provider
+187-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:185:9-195:20
+188            android:name="androidx.startup.InitializationProvider"
+188-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:186:13-67
+189            android:authorities="${applicationId}.androidx-startup"
+189-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:187:13-68
+190            android:exported="false"
+190-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:188:13-37
+191            tools:node="merge" >
+191-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:189:13-31
+192
+193            <!-- This entry makes ExampleWindowInitializer discoverable. -->
+194            <meta-data
+194-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:192:13-194:52
+195                android:name="com.example.platform.ui.windowmanager.embedding.ExampleWindowInitializer"
+195-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:193:17-104
+196                android:value="androidx.startup" />
+196-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:194:17-49
+197        </provider> <!-- The app itself supports activity embedding, so a system override is not needed. -->
+198        <property
+198-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:25:9-27:36
+199            android:name="android.window.PROPERTY_ACTIVITY_EMBEDDING_ALLOW_SYSTEM_OVERRIDE"
+199-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:26:13-85
+200            android:value="false" />
+200-->/Users/007/DEV/FreeRider/android-platform-samples/platform-samples/samples/user-interface/windowmanager/src/main/AndroidManifest.xml:27:13-33
+201    </application>
+202
+203</manifest>
